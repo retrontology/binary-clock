@@ -1,0 +1,11 @@
+Plotted to 'Z:\Schematics\binary_clock\binary_clock-F_Cu.gbr'.
+Plotted to 'Z:\Schematics\binary_clock\binary_clock-B_Cu.gbr'.
+Plotted to 'Z:\Schematics\binary_clock\binary_clock-F_Paste.gbr'.
+Plotted to 'Z:\Schematics\binary_clock\binary_clock-B_Paste.gbr'.
+Plotted to 'Z:\Schematics\binary_clock\binary_clock-F_Silkscreen.gbr'.
+Plotted to 'Z:\Schematics\binary_clock\binary_clock-B_Silkscreen.gbr'.
+Plotted to 'Z:\Schematics\binary_clock\binary_clock-F_Mask.gbr'.
+Plotted to 'Z:\Schematics\binary_clock\binary_clock-B_Mask.gbr'.
+Plotted to 'Z:\Schematics\binary_clock\binary_clock-Edge_Cuts.gbr'.
+Created Gerber job file 'Z:\Schematics\binary_clock\binary_clock-job.gbrjob'.
+Info: Done.

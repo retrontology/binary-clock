@@ -1,0 +1,88 @@
+
+(rules PCB binary_clock
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias off)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 382)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.6)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.0)
+    (clear 125.0 (type smd_to_turn_gap))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    +3.3V GND "Net-(C1-Pad1)" "Net-(D1-A)" "Net-(D2-A)" "Net-(D3-A)" "Net-(D4-A)" "Net-(D5-A)"
+    "Net-(D6-A)" "Net-(D7-A)" "Net-(D8-A)" "Net-(D9-A)" "Net-(D10-A)" "Net-(D11-A)" "Net-(D12-A)" "Net-(D13-A)"
+    "Net-(D14-A)" "Net-(D15-A)" "Net-(D16-A)" "Net-(D17-A)" "Net-(C5-Pad1)" "Net-(C7-Pad1)" "Net-(U2-(PHI)I)" "Net-(C3-Pad1)"
+    "Net-(U7-Q0)" "Net-(U8-Q0)" "Net-(U7-Q1)" "Net-(U8-Q1)" "/Interface/SWITCH_PAUSE_NOT" "/Clock_Binary/CARRY_SEC" +5V "Net-(U2-~{(PHI)O})"
+    "Net-(U7-Q2)" "Net-(U8-Q2)" "Net-(U7-Q3)" "Net-(U8-Q3)" "Net-(U7-Q4)" "Net-(U8-Q4)" "Net-(U7-Q5)" "unconnected-(U7-Q6-Pad4)"
+    "/Interface/SWITCH_PAUSE" "unconnected-(U2-Q6-Pad4)" "Net-(C6-Pad1)" "unconnected-(U2-Q10-Pad15)" "unconnected-(U7-Q10-Pad15)" "Net-(R3-Pad2)" "Net-(U10-Pad1)" "Net-(R6-Pad2)"
+    "Net-(R8-Pad2)" "Net-(R10-Pad2)" "Net-(U5-Q0)" "Net-(U5-Q1)" "Net-(U5-Q2)" "Net-(U5-Q3)" "Net-(U5-Q4)" "unconnected-(U7-Q11-Pad1)"
+    "Net-(U5-Q5)" "unconnected-(U7-Q8-Pad12)" "unconnected-(U7-Q7-Pad13)" "unconnected-(U7-Q9-Pad14)" "unconnected-(U8-Q11-Pad1)" "unconnected-(U8-Q6-Pad4)" "unconnected-(U2-Q12-Pad1)" "unconnected-(U8-Q8-Pad12)"
+    "unconnected-(U8-Q7-Pad13)" "unconnected-(U8-Q9-Pad14)" "unconnected-(U8-Q10-Pad15)" "unconnected-(U2-Q13-Pad2)" "/Clock_1hz/CLK_2Hz" "unconnected-(U2-Q5-Pad5)" "unconnected-(U2-Q7-Pad6)" "unconnected-(U2-Q4-Pad7)"
+    "unconnected-(U2-(PHI)O-Pad9)" "unconnected-(U2-Q9-Pad13)" "unconnected-(U2-Q8-Pad14)" "unconnected-(U3-Q11-Pad1)" "unconnected-(U3-Q5-Pad2)" "unconnected-(U3-Q4-Pad3)" "unconnected-(U3-Q6-Pad4)" "unconnected-(U3-Q3-Pad5)"
+    "unconnected-(U3-Q2-Pad6)" "/Clock_1hz/CLK_1Hz" "unconnected-(U3-Q1-Pad7)" "unconnected-(U3-Q8-Pad12)" "unconnected-(U3-Q7-Pad13)" "unconnected-(U3-Q9-Pad14)" "unconnected-(U3-Q10-Pad15)" "/Interface/BUTTON_RESET"
+    "/Interface/BUTTON_SEC" "/Interface/BUTTON_MIN" "/Interface/BUTTON_HOUR" "unconnected-(U5-Q11-Pad1)" "unconnected-(U5-Q6-Pad4)" "/Clock_Binary/CLOCK_SEC" "/Clock_Binary/RESET_SEC" "unconnected-(U5-Q8-Pad12)"
+    "unconnected-(U5-Q7-Pad13)" "unconnected-(U5-Q9-Pad14)" "unconnected-(U5-Q10-Pad15)" "/Clock_Binary/CARRY_MIN" "/Clock_Binary/CLOCK_MIN" "unconnected-(U8-Q5-Pad2)" "/Clock_Binary/CLOCK_HOUR" "/Clock_Binary/RESET_HOUR"
+    "Net-(U11-Pad1)" "/Clock_Binary/CARRY_HOUR" "/Clock_Binary/RESET_MIN"
+    (clearance_class "kicad_default")
+    (via_rule "kicad_default")
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
