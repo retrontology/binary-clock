@@ -428,7 +428,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "binary_clock.dsn",
-      "step": "binary_clock.step",
+      "step": "../Enclosure/binary_clock.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""

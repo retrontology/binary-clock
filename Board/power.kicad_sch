@@ -391,8 +391,8 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 33ffc3ae-f3c4-4aba-8207-f05b40afa550))
-    (pin "3" (uuid a2f8b131-d006-4299-adac-38ca4fa8acc7))
     (pin "2" (uuid c5b7b2e2-3584-40f1-a61b-60f00213f29c))
+    (pin "3" (uuid a2f8b131-d006-4299-adac-38ca4fa8acc7))
     (instances
       (project "binary_clock"
         (path "/4c64ecad-5542-463c-9546-c9b2e3a763b0/eef61b8c-4259-4582-99b6-3a16aba80d40"
