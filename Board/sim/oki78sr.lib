@@ -1,0 +1,11 @@
+* Murata OKI-78SR-5/1.5 behavioral model (switching regulator, averaged)
+* Output: ideal 5 V source that sags when IN drops below ~7 V (2 V headroom).
+* Input: constant-power load, I_in = P_out / (eff * V_in) + no-load current (datasheet: 5 mA typ),
+* so input current rises as the bulk cap sags, like a real buck converter.
+* Does not model switching ripple, soft-start or undervoltage lockout.
+.subckt OKI78SR5 IN GND OUT params: vout=5 eff=0.85 hdrm=2 iq=5m
+Bout OUTI GND V={min(vout, max(V(IN,GND)-hdrm, 0))}
+Vsns OUTI OUT 0
+Bin IN GND I={V(OUT,GND)*max(i(Vsns),0)/(eff*max(V(IN,GND),1)) + iq*min(V(IN,GND),1)}
+Rleak IN GND 10Meg
+.ends

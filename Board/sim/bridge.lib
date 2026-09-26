@@ -1,0 +1,9 @@
+* Full-wave bridge rectifier, MCC DB104 (DB-1, 1 A, 400 V)
+* Diodes tuned to the datasheet worst case: VF = 1.1 V @ 1 A, CJ = 25 pF @ 4 V
+.subckt BRIDGE AC1 AC2 POS NEG
+D1 AC1 POS DGP
+D2 AC2 POS DGP
+D3 NEG AC1 DGP
+D4 NEG AC2 DGP
+.model DGP D(IS=7.03n RS=0.22 N=1.81 EG=1.06 XTI=5 BV=400 IBV=10u CJO=65p VJ=0.7 M=0.5 FC=0.5 TT=100n)
+.ends

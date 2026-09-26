@@ -1,0 +1,7 @@
+* 120 VAC : 9 VAC transformer, simple coupled-inductor model
+.subckt XFMR_120_9 P1 P2 S1 S2
+Lp  P1 P2 16
+Ls  S1 S2 {16*(9/120)**2}
+K1  Lp Ls 0.999
+Rgnd S2 P2 1G
+.ends

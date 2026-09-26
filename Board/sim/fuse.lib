@@ -1,0 +1,4 @@
+* Fuse modelled as its cold resistance (does not model blowing)
+.subckt FUSE A B
+R1 A B 1
+.ends
