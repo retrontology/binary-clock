@@ -5,4 +5,26 @@
 	(uuid "5e4e3430-f515-4206-97e1-11152d06e553")
 	(paper "A5")
 	(lib_symbols)
+	(hierarchical_label "CLOCK_1HZ"
+		(shape output)
+		(at 170.18 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "87ca3090-ce26-4341-aa3d-02850dde739e")
+	)
+	(hierarchical_label "AC_SENSE"
+		(shape input)
+		(at 30.48 38.1 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c7722c4f-02ae-4396-a58a-bb5d4824b674")
+	)
 )

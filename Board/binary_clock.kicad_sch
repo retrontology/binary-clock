@@ -5,8 +5,28 @@
 	(uuid "4c64ecad-5542-463c-9546-c9b2e3a763b0")
 	(paper "A5")
 	(lib_symbols)
+	(wire
+		(pts
+			(xy 76.2 40.64) (xy 90.17 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc4ccbeb-6d1a-4d98-94da-3cc64eaea0ee")
+	)
+	(wire
+		(pts
+			(xy 50.8 35.56) (xy 62.23 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed5bd9b5-55c5-44a0-9a13-46ff056ec704")
+	)
 	(sheet
-		(at 137.16 31.75)
+		(at 90.17 31.75)
 		(size 26.67 60.96)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -22,7 +42,7 @@
 		)
 		(uuid "0ef382e6-1ede-4231-938c-05657f1ca64b")
 		(property "Sheetname" "Counters"
-			(at 137.16 31.0384 0)
+			(at 90.17 31.0384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -31,7 +51,7 @@
 			)
 		)
 		(property "Sheetfile" "clock_binary.kicad_sch"
-			(at 137.16 93.2946 0)
+			(at 90.17 93.2946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -40,7 +60,7 @@
 			)
 		)
 		(pin "CLOCK_1HZ" input
-			(at 137.16 38.1 180)
+			(at 90.17 40.64 180)
 			(uuid "34de76e4-de5c-4099-99f2-587162094e8f")
 			(effects
 				(font
@@ -58,7 +78,7 @@
 		)
 	)
 	(sheet
-		(at 48.26 33.02)
+		(at 36.83 31.75)
 		(size 13.97 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -74,7 +94,7 @@
 		)
 		(uuid "35c0af92-b8b1-4456-9e25-6a6ac0397932")
 		(property "Sheetname" "Power"
-			(at 48.26 32.3084 0)
+			(at 36.83 31.0384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -83,12 +103,22 @@
 			)
 		)
 		(property "Sheetfile" "power.kicad_sch"
-			(at 48.26 46.3046 0)
+			(at 36.83 45.0346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "AC_SENSE" output
+			(at 50.8 35.56 0)
+			(uuid "1eda3d43-ae18-4b33-a30a-2ec81b96ac95")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -100,8 +130,8 @@
 		)
 	)
 	(sheet
-		(at 96.52 27.94)
-		(size 17.78 19.05)
+		(at 62.23 31.75)
+		(size 13.97 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -116,7 +146,7 @@
 		)
 		(uuid "a3ea7e4e-6069-4722-969b-8131ffb3a490")
 		(property "Sheetname" "Clock"
-			(at 96.52 27.2284 0)
+			(at 62.23 31.0384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -125,12 +155,32 @@
 			)
 		)
 		(property "Sheetfile" "clock_1hz.kicad_sch"
-			(at 96.52 47.5746 0)
+			(at 62.23 45.0346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "AC_SENSE" input
+			(at 62.23 35.56 180)
+			(uuid "e4865ccd-2e14-4538-98d7-2a19c6460b66")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "CLOCK_1HZ" output
+			(at 76.2 40.64 0)
+			(uuid "62830785-5c0d-404e-834e-7de8fb729d39")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
